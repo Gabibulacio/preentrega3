@@ -8,6 +8,8 @@
     <title>Contactos | Hey Guapa!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/hg2.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9c3170557b.js" crossorigin="anonymous"></script>
 </head>
 <body class="container">
     <nav class="nav">
@@ -27,15 +29,17 @@
         </div>
     </header>
     <main>
-        <form class="formulario" action="">
-            <h2>Contactanos</h2>  
+        <form class="formulario" action="https://formsubmit.co/03f18ac4afab9144355b86de0c995869" method="POST">
+            <h2>Contactanos</h2>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/assets/paginas/respuesta.html"> 
+            <input type="hidden" name="_captcha" value="false"> 
                 <label class="NomApell">
                     Nombre completo
                     <input type="text" name="NomApell" required>
                 </label>
                 <label class="email">
                     Email
-                    <input type="email" name="email" required>
+                    <input type="email" name="mail" required>
                 </label>
                 <label class="tel">
                     Teléfono
@@ -53,9 +57,24 @@
         </form>      
     </main> 
         <footer class="pie">
-            <h2 class="pie__titulo">¡Seguinos en redes sociales!</h2>
-            <p class="pie__subtitulo">Instagram, Facebook y Tik-Tok</p>
-            <p class="pie__subtitulo-1">@Heyguapaok</p>
+            <div>
+                <p class="pie__titulo">¡Seguinos en redes sociales!</p>
+            </div>
+                <div class="iconos">
+                    <div class="redes">
+                        <a href="https://www.tiktok.com/@heyguapaok?_t=8Z7JgnvGOqU&_r=1" class="fa-brands fa-tiktok" target="_blank"></a>
+                    </div>
+                    <div class="redes">
+                        <a href="https://wa.me/message/QKZ4VQRAGJWVH1" class="fa-brands fa-whatsapp" target="_blank"></a>
+                    </div>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/profile.php?id=100078285666533" class="fa-brands fa-facebook" target="_blank"></a>
+                    </div>
+                    <div class="redes">
+                        <a href="https://www.instagram.com/heyguapaok" class="fa-brands fa-instagram" target="_blank"></a>
+                    </div>
+                </div> 
+
         </footer>
 </body>
 </html>
